@@ -1,0 +1,9 @@
+function calculateIMC() {
+  var weight = document.getElementById("weight").value;
+  var height = document.getElementById("height").value;
+
+  var bmi = weight / ((height / 100) ** 2);
+  var result = "Seu IMC é: " + bmi.toFixed(2);
+
+  document.getElementById("result").innerHTML = result;
+}
